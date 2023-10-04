@@ -447,7 +447,7 @@ body {
     position: absolute;
     padding: 0;
     gap: 1.6rem;
-    transition: all 200ms ease-in-out;
+    transition: all 150ms ease-in-out;
   }
   .book__simple:nth-child(1) {
     left: 0;
