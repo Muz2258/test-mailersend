@@ -34,6 +34,7 @@
 		gap: 2.4rem;
 		padding: 0.8rem;
 		width: calc(100% - 3.2rem);
+		scroll-margin-top: 11.2rem;
 
 		img {
 			height: 18.6rem;
@@ -130,6 +131,7 @@
 			flex-direction: row;
 			width: calc(100% - 9.6rem);
 			padding: 1.6rem;
+			scroll-padding-top: 12.8rem;
 
 			img {
 				height: 30.6rem;
@@ -151,7 +153,7 @@
 			position: absolute;
 			padding: 0;
 			gap: 1.6rem;
-			transition: all 150ms ease-in-out;
+			transition: all 200ms ease-in-out;
 
 			&:nth-child(1) {
 				left: 0;
@@ -171,6 +173,7 @@
 
 			&:nth-child(5) {
 				left: 34%;
+				// transform: translateX(-50%);
 			}
 
 			&:nth-child(6) {
@@ -209,8 +212,9 @@
 
 		&__detailed {
 			gap: 4rem;
-			width: calc(100% - 37.8rem);
+			width: min(98rem, calc(100% - 37.8rem));
 			padding: 1.6rem;
+			scroll-padding-top: 16rem;
 
 			img {
 				height: 35.2rem;

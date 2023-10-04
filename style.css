@@ -297,6 +297,9 @@ body {
   border-color: hsl(0, 0%, 14%);
   color: hsl(0, 0%, 14%);
 }
+.btn__sec--outline--small::before {
+  background-color: hsl(0, 0%, 14%);
+}
 @media only screen and (min-width: 45em) {
   .btn__sec--outline--small {
     font-size: 1.2rem;
@@ -340,6 +343,7 @@ body {
   gap: 2.4rem;
   padding: 0.8rem;
   width: calc(100% - 3.2rem);
+  scroll-margin-top: 11.2rem;
 }
 .book__detailed img {
   height: 18.6rem;
@@ -427,6 +431,7 @@ body {
     flex-direction: row;
     width: calc(100% - 9.6rem);
     padding: 1.6rem;
+    scroll-padding-top: 12.8rem;
   }
   .book__detailed img {
     height: 30.6rem;
@@ -442,7 +447,7 @@ body {
     position: absolute;
     padding: 0;
     gap: 1.6rem;
-    transition: all 150ms ease-in-out;
+    transition: all 200ms ease-in-out;
   }
   .book__simple:nth-child(1) {
     left: 0;
@@ -486,8 +491,9 @@ body {
   }
   .book__detailed {
     gap: 4rem;
-    width: calc(100% - 37.8rem);
+    width: min(98rem, 100% - 37.8rem);
     padding: 1.6rem;
+    scroll-padding-top: 16rem;
   }
   .book__detailed img {
     height: 35.2rem;
@@ -635,7 +641,7 @@ body {
 }
 @media only screen and (min-width: 80em) {
   .hero {
-    padding-top: 13.6rem;
+    padding-top: 16.6rem;
     padding-bottom: 6.4rem;
     gap: 6.4rem;
   }
@@ -662,7 +668,7 @@ body {
 }
 @media only screen and (min-width: 80em) {
   .hero .pitch {
-    width: calc(100% - 68.4rem);
+    width: min(75rem, 100% - 68.4rem);
   }
 }
 @media only screen and (min-width: 120em) {
@@ -735,7 +741,7 @@ body {
   .hero .pitch .cta .left,
   .hero .pitch .cta .right {
     order: 0;
-    width: 20%;
+    width: min(12.8rem, 20%);
     padding: 0 0;
   }
 }
@@ -783,6 +789,21 @@ body {
   flex-direction: column;
   gap: 5.6rem;
   align-items: center;
+}
+@media only screen and (min-width: 45em) {
+  .collection-list {
+    padding-top: 8rem;
+  }
+}
+@media only screen and (min-width: 80em) {
+  .collection-list {
+    padding-top: 8.8rem;
+  }
+}
+@media only screen and (min-width: 120em) {
+  .collection-list {
+    padding-top: 12.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

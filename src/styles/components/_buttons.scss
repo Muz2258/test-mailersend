@@ -75,6 +75,10 @@
 			border-color: $neu__14;
 			color: $neu__14;
 
+			&::before {
+				background-color: $neu__14;
+			}
+
 			@include breakpoint(medium) {
 				font-size: 1.2rem;
 			}

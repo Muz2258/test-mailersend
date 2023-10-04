@@ -15,7 +15,7 @@
 	}
 
 	@include breakpoint(large) {
-		padding-top: 13.6rem;
+		padding-top: 16.6rem;
 		padding-bottom: 6.4rem;
 		gap: 6.4rem;
 	}
@@ -39,7 +39,7 @@
 		}
 
 		@include breakpoint(large) {
-			width: calc(100% - 34.2rem * 2);
+			width: min(75rem, calc(100% - 68.4rem));
 		}
 
 		@include breakpoint(xlarge) {
@@ -118,7 +118,7 @@
 				.left,
 				.right {
 					order: 0;
-					width: 20%;
+					width: min(12.8rem, 20%);
 					padding: 0 0;
 				}
 			}
