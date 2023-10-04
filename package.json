@@ -4,11 +4,18 @@
 	"description": "Recruitment test for MailerSend (2023, October).",
 	"main": "index.js",
 	"scripts": {
-		"dev": "sass src/styles/main.scss style.css -w"
+		"dev": "sass src/styles/main.scss style.css -w",
+		"compile:sass": "sass src/styles/main.scss dist/temp-css/style.comp.css",
+		"prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/temp-css/style.comp.css -o dist/temp-css/style.pref.css",
+		"compress:css": "sass dist/temp-css/style.pref.css dist/style.css --style=compressed",
+		"build": "npm-run-all compile:sass prefix:css compress:css"
 	},
 	"author": "Emamuzo Okerri",
 	"license": "ISC",
 	"devDependencies": {
+		"autoprefixer": "^10.4.16",
+		"npm-run-all": "^4.1.5",
+		"postcss-cli": "^10.1.0",
 		"sass": "^1.68.0"
 	}
 }
