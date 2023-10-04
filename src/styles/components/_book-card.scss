@@ -82,6 +82,10 @@
 				-webkit-line-clamp: 6;
 				overflow: hidden;
 				transition: all 800ms ease-in-out;
+
+				p {
+					display: inline;
+				}
 			}
 
 			label {

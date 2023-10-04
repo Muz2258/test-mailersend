@@ -385,6 +385,9 @@ body {
   overflow: hidden;
   transition: all 800ms ease-in-out;
 }
+.book__detailed .details .copy p {
+  display: inline;
+}
 .book__detailed .details label {
   cursor: pointer;
   color: hsl(151, 80%, 30%);
