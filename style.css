@@ -379,7 +379,7 @@ body {
 }
 .book__detailed .details .copy {
   color: hsl(0, 0%, 30%);
-  display: -webkit-inline-box;
+  display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
   overflow: hidden;
