@@ -1,0 +1,163 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5.6rem;
+	padding-top: 12.4rem;
+	padding-bottom: 7.2rem;
+	background-image: linear-gradient(rgba($pri__tint, 0), $pri__tint);
+	overflow-x: hidden;
+
+	@include breakpoint(medium) {
+		padding-top: 19.1rem;
+		padding-bottom: 8rem;
+		gap: 9rem;
+	}
+
+	@include breakpoint(large) {
+		padding-top: 13.6rem;
+		padding-bottom: 6.4rem;
+		gap: 6.4rem;
+	}
+
+	@include breakpoint(xlarge) {
+		padding-top: 20.1rem;
+		padding-bottom: 11.2rem;
+		gap: 9.6rem;
+	}
+
+	.pitch {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2.4rem;
+		width: calc(100% - 3.2rem);
+
+		@include breakpoint(medium) {
+			width: min(56rem, calc(100% - 25.6rem));
+			gap: 4rem;
+		}
+
+		@include breakpoint(large) {
+			width: calc(100% - 34.2rem * 2);
+		}
+
+		@include breakpoint(xlarge) {
+			width: calc(100% - 51.2rem * 2);
+		}
+
+		.heading-1 {
+			width: 85%;
+			text-align: center;
+			color: $neu__14;
+		}
+
+		.cta {
+			display: flex;
+			flex-wrap: wrap;
+			row-gap: 1.6rem;
+			justify-content: center;
+			width: 100%;
+
+			.btn {
+				width: 100%;
+			}
+
+			.left,
+			.right {
+				order: 1;
+				width: 45%;
+				padding: 0 1.6rem;
+			}
+
+			.left {
+				display: flex;
+				flex-direction: column;
+				gap: 0.4rem;
+				text-align: right;
+				border-right: 0.1rem solid $neu__30;
+
+				.new {
+					font-size: 1rem;
+					font-weight: 400;
+					line-height: 1;
+					color: $neu__30;
+				}
+			}
+
+			.right {
+				font-size: 1.1rem;
+				font-weight: 400;
+				line-height: 1.25;
+				color: $neu__30;
+			}
+
+			@include breakpoint(medium) {
+				column-gap: 1.6rem;
+				align-items: center;
+
+				.btn {
+					width: auto;
+				}
+
+				.left,
+				.right {
+					order: 0;
+					width: 25%;
+					padding: 0 0;
+				}
+
+				.left {
+					border-right: none;
+				}
+			}
+
+			@include breakpoint(large) {
+				column-gap: 2.4rem;
+
+				.left,
+				.right {
+					order: 0;
+					width: 20%;
+					padding: 0 0;
+				}
+			}
+
+			@include breakpoint(xlarge) {
+				.right {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+
+	.collection-display {
+		display: flex;
+		gap: 0.8rem;
+		width: 100%;
+		overflow-x: auto;
+		padding: 0 1.6rem;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		@include breakpoint(medium) {
+			padding: 0 4.8rem;
+		}
+
+		@include breakpoint(large) {
+			padding: 0;
+			width: 82rem;
+			height: 31rem;
+			position: relative;
+			isolation: isolate;
+			overflow: visible;
+		}
+
+		@include breakpoint(xlarge) {
+			width: 126.4rem;
+			height: 47.5rem;
+		}
+	}
+}

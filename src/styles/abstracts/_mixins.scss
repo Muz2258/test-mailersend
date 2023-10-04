@@ -1,0 +1,47 @@
+/*
+
+MEDIA QUERY MANAGER
+
+Device categories based on their screen width in pixels:
+320px+:   phones
+720px+:   tablets
+1280px+:  small laptops, 2in1s and large tablets in landscape
+1920px+:  laptops, desktops, tvs
+
+$breakPoint argument options:
+- small
+- medium
+- large
+- xlarge
+
+*/
+
+@mixin breakpoint($breakPoint) {
+	// Break-point for phones
+	@if $breakPoint == small {
+		@media only screen and (min-width: 20em) /* 320px */ {
+			@content;
+		}
+	}
+
+	// Break-point for tablets
+	@if $breakPoint == medium {
+		@media only screen and (min-width: 45em) /* 720px */ {
+			@content;
+		}
+	}
+
+	// Break-point for small laptops
+	@if $breakPoint == large {
+		@media only screen and (min-width: 80em) /* 1280px */ {
+			@content;
+		}
+	}
+
+	// Break-point for laptops, desktops and tvs
+	@if $breakPoint == xlarge {
+		@media only screen and (min-width: 120em) /* 1920px */ {
+			@content;
+		}
+	}
+}

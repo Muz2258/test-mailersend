@@ -1,0 +1,14 @@
+{
+	"name": "must-reads",
+	"version": "1.0.0",
+	"description": "Recruitment test for MailerSend (2023, October).",
+	"main": "index.js",
+	"scripts": {
+		"dev": "sass src/styles/main.scss style.css -w"
+	},
+	"author": "Emamuzo Okerri",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.68.0"
+	}
+}

@@ -1,0 +1,30 @@
+.shadow__left {
+	@include breakpoint(xlarge) {
+		box-shadow: -1.6rem 0 2.4rem rgba($neu__14, 0.5);
+	}
+	@include breakpoint(large) {
+		box-shadow: -0.8rem 0 1.6rem rgba($neu__14, 0.5);
+	}
+}
+
+.shadow__right {
+	@include breakpoint(xlarge) {
+		box-shadow: 1.6rem 0 2.4rem rgba($neu__14, 0.5);
+	}
+	@include breakpoint(large) {
+		box-shadow: 0.8rem 0 1.6rem rgba($neu__14, 0.5);
+	}
+}
+
+.shadow__selected {
+	@include breakpoint(xlarge) {
+		box-shadow: 0 0 4.8rem rgba($neu__14, 0.75);
+	}
+	@include breakpoint(large) {
+		box-shadow: 0 0 3.2rem rgba($neu__14, 0.75);
+	}
+}
+
+.shadow__img {
+	box-shadow: 0 0 0.4rem rgba($neu__14, 0.5);
+}

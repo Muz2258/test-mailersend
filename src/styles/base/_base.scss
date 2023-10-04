@@ -1,0 +1,18 @@
+/* Set universall document styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Set root font sizing options for document */
+html {
+	font-size: 62.5%; //1rem = 10px (equivalent to 62.5% of root font-size)
+	scroll-behavior: smooth;
+}
+
+/* Set base font properties and body styling  */
+body {
+	font-family: "Inter", sans-serif;
+	background-color: $neu__100;
+}

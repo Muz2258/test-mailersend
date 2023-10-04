@@ -1,0 +1,78 @@
+// Import font family from google fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.heading-1 {
+	font-weight: 700;
+	line-height: 1.15;
+	letter-spacing: 0;
+	font-size: 1.8rem;
+
+	@include breakpoint(medium) {
+		font-size: 2.8rem;
+	}
+
+	@include breakpoint(large) {
+		font-size: 3.2rem;
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: 4.8rem;
+	}
+}
+
+.heading-2 {
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: 0;
+	font-size: 1.8rem;
+
+	@include breakpoint(medium) {
+		font-size: 2.4rem;
+	}
+
+	@include breakpoint(large) {
+		font-size: 3.2rem;
+	}
+}
+
+.copy {
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0;
+	font-size: 1.4rem;
+
+	@include breakpoint(large) {
+		font-size: 1.6rem;
+	}
+
+	& p {
+		margin-bottom: 0.8em;
+	}
+
+	& ul {
+		list-style-type: disc;
+		margin-inline: 1rem;
+		margin-bottom: 1rem;
+		padding-inline: 1.5rem;
+
+		& li {
+			padding-bottom: 0.4rem;
+		}
+	}
+}
+
+.caption {
+	font-weight: 400;
+	line-height: 1.25;
+	letter-spacing: 0;
+	font-size: 1.4rem;
+
+	@include breakpoint(large) {
+		font-size: 1.6rem;
+	}
+
+	&__semi-bold {
+		font-weight: 600;
+		line-height: 1;
+	}
+}
