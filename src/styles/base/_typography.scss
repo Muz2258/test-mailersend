@@ -46,17 +46,36 @@
 	}
 
 	& p {
-		margin-bottom: 0.8em;
+		display: inline;
+
+		&:not(:first-child)::before,
+		&::after {
+			content: "\a";
+			white-space: pre;
+		}
 	}
 
 	& ul {
-		list-style-type: disc;
-		margin-inline: 1rem;
-		margin-bottom: 1rem;
-		padding-inline: 1.5rem;
+		display: inline;
+		// list-style-type: disc;
+		// margin-inline: 1rem;
+		// margin-bottom: 1rem;
+		// padding-inline: 1.5rem;
 
 		& li {
-			padding-bottom: 0.4rem;
+			margin-top: 0.8rem;
+
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 0.3em;
+				height: 0.3em;
+				vertical-align: middle;
+				border-radius: 0.15em;
+				margin-right: 0.8rem;
+				margin-left: 0.4rem;
+				background-color: $neu__14;
+			}
 		}
 	}
 }
