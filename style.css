@@ -89,15 +89,15 @@ body {
 .copy p {
   display: inline;
 }
-.copy p:not(:first-child)::before, .copy p::after {
-  content: "\a";
+.copy p::after {
+  content: "\a\a";
   white-space: pre;
 }
 .copy ul {
   display: inline;
 }
 .copy ul li {
-  margin-top: 0.8rem;
+  display: inline;
 }
 .copy ul li::before {
   content: "";
@@ -109,6 +109,10 @@ body {
   margin-right: 0.8rem;
   margin-left: 0.4rem;
   background-color: hsl(0, 0%, 14%);
+}
+.copy ul li::after {
+  content: "\a\a";
+  white-space: pre;
 }
 
 .caption {
