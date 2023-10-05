@@ -88,6 +88,7 @@ body {
 }
 .copy p {
   display: inline;
+  padding-bottom: 0.8rem;
 }
 .copy p::after {
   content: "\a\a";

@@ -47,6 +47,7 @@
 
 	& p {
 		display: inline;
+		padding-bottom: 0.8rem;
 
 		&::after {
 			content: "\a\a";
